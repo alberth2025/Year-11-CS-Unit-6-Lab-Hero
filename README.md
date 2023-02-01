@@ -1,3 +1,4 @@
+# Name: Albert Partner: Ian
 # Year-11-CS-Unit-6-Lab-Hero
 
 Your job is to create one class called Hero.

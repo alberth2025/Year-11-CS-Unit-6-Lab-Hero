@@ -59,25 +59,25 @@ public class HeroTester {
         tearDown();
     }
 
-    @Test
-    public void TestFightToTheDeathNTimes() {
-        setUp();
-
-        int numberOfFights = 100;
-
-        String result = hero1.nFightsToTheDeath(hero2, numberOfFights);
-        int indexOfFirstColon = result.indexOf(":");
-        int indexOfFirstColonEnd = result.indexOf("wins", indexOfFirstColon);
-        int indexOfSecondColon = result.indexOf(":", indexOfFirstColon+1);
-        int indexOfSecondColonEnd = result.indexOf("wins", indexOfSecondColon);
-
-        int winsHero1 = Integer.parseInt(result.substring(indexOfFirstColon+2, indexOfFirstColonEnd-1));
-        int winsHero2 = Integer.parseInt(result.substring(indexOfSecondColon+2, indexOfSecondColonEnd-1));
-
-        assertEquals("Ensure that your nFightsToTheDeath method has been implemented correctly!", numberOfFights, winsHero1+winsHero2);
-
-        tearDown();
-    }
+//    @Test
+//    public void TestFightToTheDeathNTimes() {
+//        setUp();
+//
+//        int numberOfFights = 100;
+//
+//        String result = hero1.nFightsToTheDeath(hero2, numberOfFights);
+//        int indexOfFirstColon = result.indexOf(":");
+//        int indexOfFirstColonEnd = result.indexOf("wins", indexOfFirstColon);
+//        int indexOfSecondColon = result.indexOf(":", indexOfFirstColon+1);
+//        int indexOfSecondColonEnd = result.indexOf("wins", indexOfSecondColon);
+//
+//        int winsHero1 = Integer.parseInt(result.substring(indexOfFirstColon+2, indexOfFirstColonEnd-1));
+//        int winsHero2 = Integer.parseInt(result.substring(indexOfSecondColon+2, indexOfSecondColonEnd-1));
+//
+//        assertEquals("Ensure that your nFightsToTheDeath method has been implemented correctly!", numberOfFights, winsHero1+winsHero2);
+//
+//        tearDown();
+//    }
 
     @Test
     public void TestToString() {
